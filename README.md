@@ -10,3 +10,5 @@ Eatable 1/1
 1/16 + 1/16 = 1/8
 
 Game uses graphics.py library and played with WASD or Arrow keys. 
+
+![image](https://github.com/SMDHuman/1DIVSnake/blob/main/Screenshot_4.png)
