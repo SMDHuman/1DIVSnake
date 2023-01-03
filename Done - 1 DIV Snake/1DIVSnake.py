@@ -82,8 +82,10 @@ class Food():
 				foods.append(self.__class__(self.div // 2, snake, self.pos))
 			elif(food.div != self.div and self.pos == food.pos):
 				food.push(snake)
-
-
+def clear(win):
+    for item in win.items[:]:
+        item.undraw()
+    win.update()
 
 win = GraphWin("1/Snake", 600, 600)
 win.setBackground("grey")
@@ -105,7 +107,7 @@ while(1):
 	while(time.time() - stime < 0.5):
 		snake.updateDir()
 
-	win.clear()
+	clear(win)
 	
 	for food in foods:
 		if(snake.futureHead() == food.pos and food.div == 1):
